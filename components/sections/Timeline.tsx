@@ -11,7 +11,7 @@ interface TimelineProps {
 
 // Map company names to their logo files
 const companyLogos: { [key: string]: string } = {
-    'Quercus Alternance': '/logos/quercus-logo.jpg',
+    'Quercus Patrimoine': '/logos/quercus-logo.jpg',
     'Royal Mansour Marrakech': '/logos/royal-mansour-logo.jpg',
     'Hôtel Kenzi Club Agdal Medina': '/logos/kenzi-logo.jpg',
 }
