@@ -15,7 +15,7 @@ const fadeInUp = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 1,
+            duration: 1.15,
             delay,
             ease: [0.22, 1, 0.36, 1]
         }

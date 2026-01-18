@@ -39,7 +39,7 @@ export default function ContactModal({ isOpen, onClose, content }: ContactModalP
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.4 }}
+                        transition={{ duration: 0.46 }}
                         onClick={onClose}
                         className="fixed inset-0 bg-black/80 z-[200]"
                         aria-hidden="true"
@@ -52,7 +52,7 @@ export default function ContactModal({ isOpen, onClose, content }: ContactModalP
                             initial={{ opacity: 0, y: 40, scale: 0.95 }}
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: 40, scale: 0.95 }}
-                            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                            transition={{ duration: 0.46, ease: [0.22, 1, 0.36, 1] }}
                             className="bg-white max-w-lg w-full p-12 relative"
                             role="dialog"
                             aria-modal="true"

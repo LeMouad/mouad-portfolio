@@ -15,7 +15,7 @@ const fadeInFromLeft = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1,
+            duration: 1.15,
             ease: [0.22, 1, 0.36, 1]
         }
     }
@@ -27,8 +27,8 @@ const fadeInFromRight = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1,
-            delay: 0.3,
+            duration: 1.15,
+            delay: 0.35,
             ease: [0.22, 1, 0.36, 1]
         }
     }

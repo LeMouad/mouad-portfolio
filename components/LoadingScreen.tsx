@@ -46,7 +46,7 @@ export default function LoadingScreen() {
                 <motion.div
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                    transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }}
                     className="fixed inset-0 z-[100] bg-black flex items-center justify-center"
                 >
                     {/* Elegant spinning line */}
