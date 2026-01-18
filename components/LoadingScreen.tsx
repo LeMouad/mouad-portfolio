@@ -5,15 +5,40 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export default function LoadingScreen() {
     const [isLoading, setIsLoading] = useState(true)
+    const [isMounted, setIsMounted] = useState(false)
 
     useEffect(() => {
-        // Wait for page to be fully loaded, then fade out
-        const timer = setTimeout(() => {
-            setIsLoading(false)
-        }, 1500)
+        // Mark as mounted immediately
+        setIsMounted(true)
 
-        return () => clearTimeout(timer)
+        // Wait for DOM to be ready, then fade out
+        const handleLoad = () => {
+            // Small delay to ensure smooth transition
+            setTimeout(() => {
+                setIsLoading(false)
+            }, 800)
+        }
+
+        // Check if document is already loaded
+        if (document.readyState === 'complete') {
+            handleLoad()
+        } else {
+            window.addEventListener('load', handleLoad)
+        }
+
+        // Fallback timer in case load event doesn't fire
+        const fallbackTimer = setTimeout(() => {
+            setIsLoading(false)
+        }, 3000)
+
+        return () => {
+            window.removeEventListener('load', handleLoad)
+            clearTimeout(fallbackTimer)
+        }
     }, [])
+
+    // Don't render anything on server
+    if (!isMounted) return null
 
     return (
         <AnimatePresence>
