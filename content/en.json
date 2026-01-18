@@ -1,0 +1,345 @@
+{
+    "nav": {
+        "home": "Home",
+        "timeline": "Experience",
+        "academic": "Education",
+        "skills": "Skills",
+        "tools": "Tools",
+        "whyHospitality": "Why Hospitality",
+        "savignac": "Savignac",
+        "contactInfo": "Information",
+        "contact": "Contact"
+    },
+    "hero": {
+        "name": "Mouad EL HYANI",
+        "headline": "Looking for an apprenticeship in hospitality (sales or marketing positions)",
+        "subline": "With a lifelong passion for hospitality, I am pursuing an MBA at École de Savignac to turn this calling into a career.",
+        "cta": {
+            "download": "View my CV",
+            "contact": "Contact",
+            "linkedin": "LinkedIn"
+        },
+        "meta": {
+            "location": "Clermont-Ferrand, France",
+            "availability": "3 weeks in Company / 1 week at School",
+            "contract": "24 months"
+        }
+    },
+    "timeline": {
+        "title": "Professional Experience",
+        "experiences": [
+            {
+                "role": "Marketing & Wealth Communication",
+                "company": "Quercus Alternance",
+                "location": "Clermont-Ferrand, France",
+                "dates": "September 2024 – Present",
+                "description": "Lead communication strategy, manage email campaigns, and organize premium client events.",
+                "featured": true,
+                "missions": [
+                    "Lead digital and print communication strategy",
+                    "Manage targeted email campaigns (+25% open rate)",
+                    "Organize premium events for wealth management clients",
+                    "Create content for social media and website",
+                    "Track and analyze marketing performance metrics"
+                ],
+                "skills": [
+                    "Emailing",
+                    "Communication",
+                    "Events",
+                    "Digital Marketing"
+                ]
+            },
+            {
+                "role": "Marketing Internship",
+                "company": "Royal Mansour Marrakech",
+                "location": "Marrakech, Morocco",
+                "dates": "June 2024 – August 2024",
+                "description": "Supported cross-property marketing, redesigned the Medi Spa guest journey, and conducted MICE & wellness research.",
+                "featured": true,
+                "missions": [
+                    "Support cross-property marketing strategy (Marrakech, Casablanca)",
+                    "Fully redesign the Medi Spa guest experience",
+                    "Conduct MICE & wellness market research",
+                    "Benchmark competing luxury hotels in the region",
+                    "Participate in strategic meetings with leadership"
+                ],
+                "skills": [
+                    "Strategic Marketing",
+                    "Spa & Wellness",
+                    "MICE",
+                    "Luxury Hospitality"
+                ]
+            },
+            {
+                "role": "Sales Internship",
+                "company": "Kenzi Club Agdal Medina Hotel",
+                "location": "Marrakech, Morocco",
+                "dates": "June 2023 – July 2023",
+                "description": "Managed reservations, optimized OTA channels, and prospected travel agency partnerships.",
+                "featured": true,
+                "missions": [
+                    "Manage reservations and optimize OTA channels",
+                    "Prospect and build relationships with travel agencies",
+                    "Analyze sales performance with weekly reports",
+                    "Help develop promotional offers",
+                    "Welcome and assist VIP guests"
+                ],
+                "skills": [
+                    "Revenue Management",
+                    "OTA",
+                    "Sales",
+                    "Client Relations"
+                ]
+            },
+            {
+                "role": "Marketing & Research Internship",
+                "company": "LMS Marketing Consulting",
+                "location": "Casablanca, Morocco",
+                "dates": "June 2022 – August 2022",
+                "description": "Conducted market studies, performed SME marketing audits, and wrote strategic repositioning reports.",
+                "featured": false,
+                "missions": [
+                    "Conduct industry-specific market studies",
+                    "Perform marketing audits for local SMEs",
+                    "Write strategic repositioning reports",
+                    "Perform in-depth competitive analysis",
+                    "Provide actionable marketing recommendations"
+                ],
+                "skills": [
+                    "Market Research",
+                    "Audit",
+                    "Strategy",
+                    "Analysis"
+                ]
+            },
+            {
+                "role": "Digital Marketing Internship",
+                "company": "IBOOST MOROCCO",
+                "location": "Marrakech, Morocco",
+                "dates": "June 2021 – July 2021",
+                "description": "Created social media content and managed Facebook & Google Ads campaigns.",
+                "featured": false,
+                "missions": [
+                    "Create engaging social media content",
+                    "Manage Facebook & Google Ads campaigns",
+                    "Track ad performance and report results",
+                    "Design marketing visuals and materials",
+                    "Handle community management"
+                ],
+                "skills": [
+                    "Social Media",
+                    "Google Ads",
+                    "Facebook Ads",
+                    "Content Creation"
+                ]
+            }
+        ],
+        "otherExperiences": "Other experiences"
+    },
+    "academic": {
+        "title": "Education",
+        "items": [
+            {
+                "school": "École de Savignac",
+                "degree": "MBA in Luxury Hospitality Management",
+                "dates": "2025 – 2027",
+                "location": "Savignac-les-Églises, France"
+            },
+            {
+                "school": "ESC Clermont Business School",
+                "degree": "Master in Management – Marketing",
+                "dates": "2024 – 2026",
+                "location": "Clermont-Ferrand, France",
+                "note": "Dual degree program"
+            },
+            {
+                "school": "ENCG Settat",
+                "degree": "Bachelor in Management – Marketing",
+                "dates": "2021 – 2024",
+                "location": "Settat, Morocco",
+                "note": "Dual degree with ESC Clermont"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills",
+        "items": [
+            {
+                "title": "AI & Automation",
+                "tags": [
+                    "Workflows",
+                    "Reporting",
+                    "Vibe Coding"
+                ]
+            },
+            {
+                "title": "Digital Marketing",
+                "tags": [
+                    "SEO",
+                    "Emailing",
+                    "Ads"
+                ]
+            },
+            {
+                "title": "Strategic Marketing",
+                "tags": [
+                    "Segmentation",
+                    "Positioning",
+                    "Marketing Mix"
+                ]
+            },
+            {
+                "title": "Sales & Business Development",
+                "tags": [
+                    "Prospecting",
+                    "OTA",
+                    "Revenue Mgmt"
+                ]
+            },
+            {
+                "title": "Data & Analytics",
+                "tags": [
+                    "Power BI",
+                    "Excel",
+                    "SPSS"
+                ]
+            },
+            {
+                "title": "CRM & Tools",
+                "tags": [
+                    "Apollo",
+                    "O2S",
+                    "Opera"
+                ]
+            },
+            {
+                "title": "Content & Communication",
+                "tags": [
+                    "Copywriting",
+                    "Social Media",
+                    "Branding"
+                ]
+            },
+            {
+                "title": "Market Research",
+                "tags": [
+                    "Competitive Intelligence",
+                    "NVivo",
+                    "Industry Analysis"
+                ]
+            }
+        ]
+    },
+    "tools": {
+        "title": "Tools & Software",
+        "items": [
+            {
+                "name": "Microsoft Office 365",
+                "category": "Office Suite"
+            },
+            {
+                "name": "Adobe Premiere Pro",
+                "category": "Video Editing"
+            },
+            {
+                "name": "Adobe Photoshop",
+                "category": "Photo Editing"
+            },
+            {
+                "name": "Canva",
+                "category": "Graphic Design"
+            },
+            {
+                "name": "Power BI",
+                "category": "Business Intelligence"
+            },
+            {
+                "name": "SEO Skills",
+                "category": "Search Optimization"
+            },
+            {
+                "name": "NVivo",
+                "category": "Qualitative Analysis"
+            },
+            {
+                "name": "IBM SPSS",
+                "category": "Statistical Analysis"
+            },
+            {
+                "name": "Oracle Opera",
+                "category": "Hotel Management"
+            },
+            {
+                "name": "Google Analytics",
+                "category": "Web Analytics"
+            },
+            {
+                "name": "Figma",
+                "category": "UI/UX Design"
+            },
+            {
+                "name": "Notion",
+                "category": "Productivity"
+            },
+            {
+                "name": "Meta Business Suite",
+                "category": "Social Media"
+            },
+            {
+                "name": "Brevo",
+                "category": "Marketing Automation"
+            },
+            {
+                "name": "MailChimp",
+                "category": "Email Marketing"
+            },
+            {
+                "name": "Microsoft Power Automate",
+                "category": "Workflow Automation"
+            },
+            {
+                "name": "CRM Tools: Apollo, O2S",
+                "category": "Customer Management"
+            }
+        ]
+    },
+    "whyHospitality": {
+        "title": "Why Hospitality?",
+        "paragraphs": [
+            "I grew up surrounded by my family's tourism and hospitality business. This early exposure sparked a deep passion for an industry where exceptional service and attention to detail create unforgettable guest experiences.",
+            "After building strong marketing and guest relations skills at Royal Mansour and Kenzi Club, I'm ready to make luxury hospitality my career through focused, professional training."
+        ]
+    },
+    "savignac": {
+        "title": "Why École de Savignac",
+        "paragraphs": [
+            "École de Savignac is France's premier hospitality school. Its global reputation and powerful alumni network make it the top choice for anyone serious about luxury hospitality.",
+            "This MBA will give me the business foundation, hands-on skills, and industry connections I need to succeed in high-end hospitality."
+        ]
+    },
+    "contactInfo": {
+        "title": "Get in Touch",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "locationLabel": "Location",
+        "availabilityLabel": "Availability",
+        "contractLabel": "Contract"
+    },
+    "contact": {
+        "title": "Let's connect and discuss opportunities.",
+        "subtitle": "I'm available by email or phone at your convenience. Feel free to view my CV or reach out directly — I'll get back to you promptly.",
+        "cta": "Contact",
+        "email": "elhyani.mouad@gmail.com",
+        "phone": "+33 7 65 25 62 37",
+        "linkedin": "https://linkedin.com/in/mouad-elhyani",
+        "modal": {
+            "title": "Contact me",
+            "email": "Send an email",
+            "call": "Call",
+            "close": "Close"
+        }
+    },
+    "footer": {
+        "copyright": ""
+    }
+}

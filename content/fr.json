@@ -1,0 +1,345 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "timeline": "Parcours Pro",
+        "academic": "Formation",
+        "skills": "Compétences",
+        "tools": "Outils",
+        "whyHospitality": "Pourquoi l'hôtellerie",
+        "savignac": "Savignac",
+        "contactInfo": "Informations",
+        "contact": "Contact"
+    },
+    "hero": {
+        "name": "Mouad EL HYANI",
+        "headline": "En quête d'une alternance en hôtellerie (fonctions commerciales ou marketing)",
+        "subline": "Passionné par le secteur hospitalier depuis mon plus jeune âge, je souhaite concrétiser cette vocation via le MBA de l'École de Savignac.",
+        "cta": {
+            "download": "Voir mon CV",
+            "contact": "Contact",
+            "linkedin": "LinkedIn"
+        },
+        "meta": {
+            "location": "Clermont-Ferrand, France",
+            "availability": "3 semaines en Entreprise / 1 semaine en École",
+            "contract": "24 mois"
+        }
+    },
+    "timeline": {
+        "title": "Parcours Professionnel",
+        "experiences": [
+            {
+                "role": "Marketing & Communication Patrimoine",
+                "company": "Quercus Alternance",
+                "location": "Clermont-Ferrand, France",
+                "dates": "Septembre 2024 – Présent",
+                "description": "Pilotage de la communication, gestion de campagnes E-mailing, organisation d'événements haut de gamme.",
+                "featured": true,
+                "missions": [
+                    "Pilotage de la stratégie de communication digitale et print",
+                    "Gestion de campagnes E-mailing ciblées (taux d'ouverture +25%)",
+                    "Organisation d'événements haut de gamme pour clients patrimoniaux",
+                    "Création de contenus pour les réseaux sociaux et le site web",
+                    "Suivi et analyse des indicateurs de performance marketing"
+                ],
+                "skills": [
+                    "Emailing",
+                    "Communication",
+                    "Événementiel",
+                    "Marketing Digital"
+                ]
+            },
+            {
+                "role": "Stage – Département Marketing",
+                "company": "Royal Mansour Marrakech",
+                "location": "Marrakech, Maroc",
+                "dates": "Juin 2024 – Août 2024",
+                "description": "Contribution à la stratégie marketing cross-sites, refonte du parcours client Medi Spa, étude MICE & bien-être.",
+                "featured": true,
+                "missions": [
+                    "Contribution à la stratégie marketing cross-sites (Marrakech, Casablanca)",
+                    "Refonte complète du parcours client Medi Spa",
+                    "Réalisation d'une étude de marché MICE & bien-être",
+                    "Benchmark concurrentiel des palaces de la région",
+                    "Participation aux réunions stratégiques avec la direction"
+                ],
+                "skills": [
+                    "Marketing Stratégique",
+                    "Spa & Wellness",
+                    "MICE",
+                    "Hôtellerie de Luxe"
+                ]
+            },
+            {
+                "role": "Stage – Département des Ventes",
+                "company": "Hôtel Kenzi Club Agdal Medina",
+                "location": "Marrakech, Maroc",
+                "dates": "Juin 2023 – Juillet 2023",
+                "description": "Gestion des réservations et canaux OTA, prospection agences de voyages, analyse des performances commerciales.",
+                "featured": true,
+                "missions": [
+                    "Gestion des réservations et optimisation des canaux OTA",
+                    "Prospection et fidélisation d'agences de voyages partenaires",
+                    "Analyse des performances commerciales et reporting hebdomadaire",
+                    "Participation à l'élaboration des offres promotionnelles",
+                    "Accueil et accompagnement de clients VIP"
+                ],
+                "skills": [
+                    "Revenue Management",
+                    "OTA",
+                    "Ventes",
+                    "Relation Client"
+                ]
+            },
+            {
+                "role": "Stage – Marketing & Études de Marché",
+                "company": "LMS Marketing Consulting",
+                "location": "Casablanca, Maroc",
+                "dates": "Juin 2022 – Août 2022",
+                "description": "Étude de marché sectorielle, audits marketing PME, rapport stratégique de repositionnement.",
+                "featured": false,
+                "missions": [
+                    "Réalisation d'études de marché sectorielles",
+                    "Audits marketing pour PME locales",
+                    "Rédaction de rapports stratégiques de repositionnement",
+                    "Analyse concurrentielle approfondie",
+                    "Recommandations marketing opérationnelles"
+                ],
+                "skills": [
+                    "Études de Marché",
+                    "Audit",
+                    "Stratégie",
+                    "Analyse"
+                ]
+            },
+            {
+                "role": "Stage – Assistant Marketing Digital",
+                "company": "IBOOST MOROCCO",
+                "location": "Marrakech, Maroc",
+                "dates": "Juin 2021 – Juillet 2021",
+                "description": "Création de contenus social media, campagnes publicitaires Facebook & Google Ads.",
+                "featured": false,
+                "missions": [
+                    "Création de contenus pour les réseaux sociaux",
+                    "Gestion de campagnes Facebook & Google Ads",
+                    "Suivi des performances publicitaires et reporting",
+                    "Création de visuels et supports marketing",
+                    "Community management"
+                ],
+                "skills": [
+                    "Social Media",
+                    "Google Ads",
+                    "Facebook Ads",
+                    "Création de Contenu"
+                ]
+            }
+        ],
+        "otherExperiences": "Autres expériences"
+    },
+    "academic": {
+        "title": "Parcours Académique",
+        "items": [
+            {
+                "school": "École de Savignac",
+                "degree": "MBA Management Hôtellerie de Luxe",
+                "dates": "2025 – 2027",
+                "location": "Savignac-les-Églises, France"
+            },
+            {
+                "school": "ESC Clermont Business School",
+                "degree": "Master Grande École – Marketing",
+                "dates": "2024 – 2026",
+                "location": "Clermont-Ferrand, France",
+                "note": "Double diplomation"
+            },
+            {
+                "school": "ENCG Settat",
+                "degree": "Licence en Gestion – Marketing",
+                "dates": "2021 – 2024",
+                "location": "Settat, Maroc",
+                "note": "Double diplomation avec ESC Clermont"
+            }
+        ]
+    },
+    "skills": {
+        "title": "Compétences",
+        "items": [
+            {
+                "title": "IA & Automatisation",
+                "tags": [
+                    "Workflows",
+                    "Reporting",
+                    "Vibe Coding"
+                ]
+            },
+            {
+                "title": "Marketing Digital",
+                "tags": [
+                    "SEO",
+                    "Emailing",
+                    "Ads"
+                ]
+            },
+            {
+                "title": "Marketing Stratégique",
+                "tags": [
+                    "Segmentation",
+                    "Positionnement",
+                    "Mix"
+                ]
+            },
+            {
+                "title": "Commercial & Ventes",
+                "tags": [
+                    "Prospection",
+                    "OTA",
+                    "Revenue Mgmt"
+                ]
+            },
+            {
+                "title": "Data & Analytics",
+                "tags": [
+                    "Power BI",
+                    "Excel",
+                    "SPSS"
+                ]
+            },
+            {
+                "title": "CRM & Outils",
+                "tags": [
+                    "Apollo",
+                    "O2S",
+                    "Opera"
+                ]
+            },
+            {
+                "title": "Contenu & Communication",
+                "tags": [
+                    "Copywriting",
+                    "Social Media",
+                    "Branding"
+                ]
+            },
+            {
+                "title": "Études de Marché",
+                "tags": [
+                    "Veille",
+                    "NVivo",
+                    "Analyse Concurrentielle"
+                ]
+            }
+        ]
+    },
+    "tools": {
+        "title": "Outils & Logiciels",
+        "items": [
+            {
+                "name": "Microsoft Office 365",
+                "category": "Suite bureautique"
+            },
+            {
+                "name": "Adobe Premiere Pro",
+                "category": "Montage vidéo"
+            },
+            {
+                "name": "Adobe Photoshop",
+                "category": "Retouche photo"
+            },
+            {
+                "name": "Canva",
+                "category": "Design graphique"
+            },
+            {
+                "name": "Power BI",
+                "category": "Business Intelligence"
+            },
+            {
+                "name": "Compétences SEO",
+                "category": "Référencement"
+            },
+            {
+                "name": "NVivo",
+                "category": "Analyse qualitative"
+            },
+            {
+                "name": "IBM SPSS",
+                "category": "Analyse statistique"
+            },
+            {
+                "name": "Oracle Opera",
+                "category": "Gestion hôtelière"
+            },
+            {
+                "name": "Google Analytics",
+                "category": "Analyse web"
+            },
+            {
+                "name": "Figma",
+                "category": "Design UI/UX"
+            },
+            {
+                "name": "Notion",
+                "category": "Organisation"
+            },
+            {
+                "name": "Meta Business Suite",
+                "category": "Réseaux sociaux"
+            },
+            {
+                "name": "Brevo",
+                "category": "Marketing Automation"
+            },
+            {
+                "name": "MailChimp",
+                "category": "Email Marketing"
+            },
+            {
+                "name": "Microsoft Power Automate",
+                "category": "Automatisation"
+            },
+            {
+                "name": "Outils CRM : Apollo, O2S",
+                "category": "Gestion relation client"
+            }
+        ]
+    },
+    "whyHospitality": {
+        "title": "Pourquoi l'hôtellerie ?",
+        "paragraphs": [
+            "Depuis mon plus jeune âge, j'ai grandi au cœur d'une entreprise familiale dans le tourisme et l'hôtellerie. Cette immersion précoce a nourri une passion profonde pour ce secteur, où l'excellence du service et l'attention aux détails créent des expériences mémorables.",
+            "Aujourd'hui, après avoir développé une solide expertise en marketing et relation client à travers mes expériences au Royal Mansour et au Kenzi Club, je souhaite formaliser cette vocation en rejoignant l'hôtellerie de luxe de manière délibérée et structurée."
+        ]
+    },
+    "savignac": {
+        "title": "Cap sur l'École de Savignac",
+        "paragraphs": [
+            "L'École de Savignac représente l'excellence dans la formation hôtelière en France. Sa réputation internationale et son réseau d'anciens élèves en font la référence pour qui souhaite évoluer dans l'hôtellerie de luxe.",
+            "Ce MBA me permettra d'acquérir une base théorique solide, d'approfondir mes compétences opérationnelles, et de construire un réseau professionnel durable dans le secteur de l'hôtellerie-restauration haut de gamme."
+        ]
+    },
+    "contactInfo": {
+        "title": "Contact & Informations",
+        "phoneLabel": "Téléphone",
+        "emailLabel": "Email",
+        "locationLabel": "Localisation",
+        "availabilityLabel": "Disponibilité",
+        "contractLabel": "Contrat"
+    },
+    "contact": {
+        "title": "Je serais ravi de poursuivre la discussion avec vous.",
+        "subtitle": "Je suis disponible pour échanger à votre convenance, par mail ou par téléphone. N'hésitez pas à télécharger mon CV ou à me contacter directement, je vous réponds rapidement.",
+        "cta": "Contact",
+        "email": "elhyani.mouad@gmail.com",
+        "phone": "+33 7 65 25 62 37",
+        "linkedin": "https://linkedin.com/in/mouad-elhyani",
+        "modal": {
+            "title": "Me contacter",
+            "email": "Envoyer un email",
+            "call": "Appeler",
+            "close": "Fermer"
+        }
+    },
+    "footer": {
+        "copyright": ""
+    }
+}

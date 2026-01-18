@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Geist font - the exact font used by Lorian */
+@import url('https://fonts.cdnfonts.com/css/geist');
+
+:root {
+  --font-geist: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --color-black: #000000;
+  --color-gray: #7D7D7D;
+  --color-light-gray: #ABABAB;
+  --color-divider: #E8E8E8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-geist);
+  background: #FFFFFF;
+  color: var(--color-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-black);
+  color: white;
+}
+
+/* ============================================
+   LORIAN-STYLE TYPOGRAPHY (EXACT MATCH)
+   ============================================ */
+
+/* Giant Hero Name - Matches Lorian exactly */
+.text-hero-name {
+  font-family: var(--font-geist);
+  font-size: clamp(90px, 18vw, 220px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+}
+
+/* Large Statement Text */
+.text-statement {
+  font-family: var(--font-geist);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+/* Section row titles */
+.text-row-title {
+  font-family: var(--font-geist);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* ============================================
+   ANIMATIONS (LORIAN STYLE)
+   ============================================ */
+
+/* Lorian uses smooth, elegant animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ============================================
+   SCROLLBAR (hidden for cleaner look)
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* ============================================
+   TRANSITIONS
+   ============================================ */
+
+a,
+button {
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .text-hero-name {
+    font-size: clamp(60px, 14vw, 120px);
+  }
+}
+
+@media (max-width: 640px) {
+  .text-hero-name {
+    font-size: clamp(48px, 16vw, 80px);
+  }
+
+  .text-statement {
+    font-size: clamp(24px, 7vw, 36px);
+  }
+}
