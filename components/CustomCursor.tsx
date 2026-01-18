@@ -8,6 +8,7 @@ export default function CustomCursor() {
     const [isHovering, setIsHovering] = useState(false)
     const [isVisible, setIsVisible] = useState(false)
     const [isTouchDevice, setIsTouchDevice] = useState(false)
+    const [isOnDarkBg, setIsOnDarkBg] = useState(true)
 
     useEffect(() => {
         // Detect touch device
@@ -26,7 +27,7 @@ export default function CustomCursor() {
         const handleMouseEnter = () => setIsVisible(true)
         const handleMouseLeave = () => setIsVisible(false)
 
-        // Detect hoverable elements
+        // Detect hoverable elements and background color
         const handleElementHover = (e: MouseEvent) => {
             const target = e.target as HTMLElement
             const isInteractive =
@@ -38,6 +39,14 @@ export default function CustomCursor() {
                 target.closest('[role="button"]')
 
             setIsHovering(!!isInteractive)
+
+            // Check if we're over a modal or light background
+            const modal = target.closest('[role="dialog"]')
+            const isOnWhite = modal !== null ||
+                target.closest('.bg-white') !== null ||
+                target.classList.contains('bg-white')
+
+            setIsOnDarkBg(!isOnWhite)
         }
 
         window.addEventListener('mousemove', updatePosition)
@@ -60,7 +69,7 @@ export default function CustomCursor() {
         <>
             {/* Main cursor dot */}
             <motion.div
-                className="fixed top-0 left-0 pointer-events-none z-[99] mix-blend-difference"
+                className="fixed top-0 left-0 pointer-events-none z-[999]"
                 animate={{
                     x: position.x - (isHovering ? 20 : 4),
                     y: position.y - (isHovering ? 20 : 4),
@@ -76,7 +85,8 @@ export default function CustomCursor() {
                 }}
             >
                 <div
-                    className={`w-full h-full rounded-full bg-white transition-all duration-200 ${isHovering ? 'opacity-50' : 'opacity-100'
+                    className={`w-full h-full rounded-full transition-all duration-200 ${isHovering ? 'opacity-50' : 'opacity-100'
+                        } ${isOnDarkBg ? 'bg-white mix-blend-difference' : 'bg-black'
                         }`}
                 />
             </motion.div>
