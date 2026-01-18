@@ -40,29 +40,34 @@ function useTypewriterBlur(text: string, speed: number = 50, delay: number = 100
         }
     }, [text, speed, delay])
 
-    return { displayText, isComplete, charIndex }
+    return { displayText, isComplete, charIndex, totalLength: text.length }
 }
 
 export default function Hero({ content, onContactClick }: HeroProps) {
-    const { displayText, isComplete, charIndex } = useTypewriterBlur(content.hero.headline, 40, 1200)
+    const { displayText, isComplete, charIndex, totalLength } = useTypewriterBlur(content.hero.headline, 40, 1200)
 
     // Split text to animate recent characters with blur
     const renderAnimatedText = () => {
         if (!displayText) return null
 
         return displayText.split('').map((char, index) => {
+            // If typing is complete, show all characters sharp
+            if (isComplete) {
+                return <span key={index}>{char}</span>
+            }
+
             // Calculate how "new" this character is (0 = newest, higher = older)
             const age = charIndex - index - 1
-            // Characters fade in over 8 characters
-            const fadeProgress = Math.min(age / 8, 1)
+            // Characters fade in over 6 characters
+            const fadeProgress = Math.min(age / 6, 1)
 
             return (
                 <span
                     key={index}
                     style={{
-                        opacity: 0.3 + (fadeProgress * 0.7),
-                        filter: `blur(${(1 - fadeProgress) * 4}px)`,
-                        transition: 'opacity 0.3s ease, filter 0.3s ease'
+                        opacity: 0.4 + (fadeProgress * 0.6),
+                        filter: `blur(${(1 - fadeProgress) * 3}px)`,
+                        transition: 'opacity 0.2s ease, filter 0.2s ease'
                     }}
                 >
                     {char}
@@ -87,8 +92,50 @@ export default function Hero({ content, onContactClick }: HeroProps) {
                         }}
                         className="text-[clamp(60px,12vw,160px)] font-semibold leading-[0.9] tracking-[-0.04em]"
                     >
-                        <span className="block">Mouad</span>
-                        <span className="block uppercase">El Hyani</span>
+                        {/* First name with letter stagger */}
+                        <motion.span
+                            className="block overflow-hidden"
+                            initial="hidden"
+                            animate="visible"
+                        >
+                            {'Mouad'.split('').map((letter, i) => (
+                                <motion.span
+                                    key={i}
+                                    className="inline-block"
+                                    initial={{ y: 100, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{
+                                        duration: 0.8,
+                                        delay: 0.3 + i * 0.05,
+                                        ease: [0.22, 1, 0.36, 1]
+                                    }}
+                                >
+                                    {letter}
+                                </motion.span>
+                            ))}
+                        </motion.span>
+                        {/* Last name with letter stagger */}
+                        <motion.span
+                            className="block uppercase overflow-hidden"
+                            initial="hidden"
+                            animate="visible"
+                        >
+                            {'El Hyani'.split('').map((letter, i) => (
+                                <motion.span
+                                    key={i}
+                                    className="inline-block"
+                                    initial={{ y: 100, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{
+                                        duration: 0.8,
+                                        delay: 0.5 + i * 0.04,
+                                        ease: [0.22, 1, 0.36, 1]
+                                    }}
+                                >
+                                    {letter === ' ' ? '\u00A0' : letter}
+                                </motion.span>
+                            ))}
+                        </motion.span>
                     </motion.h1>
                 </div>
 
@@ -98,9 +145,9 @@ export default function Hero({ content, onContactClick }: HeroProps) {
                 {/* Bottom Row: Tagline + Scroll Indicator */}
                 <div className="pb-6 lg:pb-10 flex justify-between items-end gap-6">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                        transition={{ duration: 0.8, delay: 1, ease: [0.22, 1, 0.36, 1] }}
                         className="max-w-[420px]"
                     >
                         {/* Typewriter headline with blur fade-in */}
@@ -114,27 +161,40 @@ export default function Hero({ content, onContactClick }: HeroProps) {
                                 />
                             )}
                         </p>
-                        <p className="text-[19px] lg:text-[21px] leading-relaxed text-gray-600">
+                        {/* Subline with fade in */}
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                            className="text-[19px] lg:text-[21px] leading-relaxed text-gray-600"
+                        >
                             {content.hero.subline}
-                        </p>
+                        </motion.p>
                     </motion.div>
 
+                    {/* Scroll indicator with bounce animation */}
                     <motion.a
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8, delay: 1 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 1.4 }}
                         href="#timeline"
-                        className="text-[14px] lg:text-[16px] font-bold hover:opacity-50 transition-opacity whitespace-nowrap"
+                        className="text-[14px] lg:text-[16px] font-bold hover:opacity-50 transition-opacity whitespace-nowrap group"
                     >
-                        {content.nav.timeline} ↓
+                        <motion.span
+                            animate={{ y: [0, 4, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                            className="inline-block"
+                        >
+                            {content.nav.timeline} ↓
+                        </motion.span>
                     </motion.a>
                 </div>
             </div>
 
             {/* Right Half - Portrait with parallax effect */}
             <motion.div
-                initial={{ opacity: 0, scale: 1.1 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 1.05, x: 40 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{
                     duration: 1.5,
                     ease: [0.22, 1, 0.36, 1],
@@ -142,7 +202,11 @@ export default function Hero({ content, onContactClick }: HeroProps) {
                 }}
                 className="w-1/2 p-3 lg:p-4"
             >
-                <div className="relative h-full w-full overflow-hidden">
+                <motion.div
+                    className="relative h-full w-full overflow-hidden"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                >
                     <ParallaxImage
                         src="/hero.jpg"
                         alt={content.hero.name}
@@ -151,7 +215,7 @@ export default function Hero({ content, onContactClick }: HeroProps) {
                         className="object-cover"
                         style={{ objectPosition: 'center 20%' }}
                     />
-                </div>
+                </motion.div>
             </motion.div>
         </section>
     )
