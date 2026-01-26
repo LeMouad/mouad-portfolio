@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import LoadingScreen from '@/components/LoadingScreen'
 import CustomCursor from '@/components/CustomCursor'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({
     subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({
                 <LoadingScreen />
                 <CustomCursor />
                 {children}
+                <Analytics />
             </body>
         </html>
     )
